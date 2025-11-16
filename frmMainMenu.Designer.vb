@@ -27,6 +27,7 @@ Partial Class frmMainMenu
         btnSales = New Button()
         btnReports = New Button()
         btnExit = New Button()
+        btnLogout = New Button()
         SuspendLayout()
         ' 
         ' lblTitle
@@ -42,7 +43,7 @@ Partial Class frmMainMenu
         ' 
         ' btnProducts
         ' 
-        btnProducts.Location = New Point(54, 108)
+        btnProducts.Location = New Point(253, 93)
         btnProducts.Name = "btnProducts"
         btnProducts.Size = New Size(114, 23)
         btnProducts.TabIndex = 1
@@ -51,7 +52,7 @@ Partial Class frmMainMenu
         ' 
         ' btnSales
         ' 
-        btnSales.Location = New Point(73, 155)
+        btnSales.Location = New Point(279, 145)
         btnSales.Name = "btnSales"
         btnSales.Size = New Size(126, 23)
         btnSales.TabIndex = 2
@@ -60,7 +61,7 @@ Partial Class frmMainMenu
         ' 
         ' btnReports
         ' 
-        btnReports.Location = New Point(103, 197)
+        btnReports.Location = New Point(313, 197)
         btnReports.Name = "btnReports"
         btnReports.Size = New Size(144, 23)
         btnReports.TabIndex = 3
@@ -69,19 +70,29 @@ Partial Class frmMainMenu
         ' 
         ' btnExit
         ' 
-        btnExit.Location = New Point(142, 239)
+        btnExit.Location = New Point(586, 321)
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(153, 23)
         btnExit.TabIndex = 4
         btnExit.Text = "Exit"
         btnExit.UseVisualStyleBackColor = True
         ' 
+        ' btnLogout
+        ' 
+        btnLogout.Location = New Point(418, 250)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Size = New Size(75, 23)
+        btnLogout.TabIndex = 5
+        btnLogout.Text = "Logout"
+        btnLogout.UseVisualStyleBackColor = True
+        ' 
         ' frmMainMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDark
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(751, 450)
+        Controls.Add(btnLogout)
         Controls.Add(btnExit)
         Controls.Add(btnReports)
         Controls.Add(btnSales)
@@ -98,5 +109,6 @@ Partial Class frmMainMenu
     Friend WithEvents btnSales As Button
     Friend WithEvents btnReports As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents btnLogout As Button
 
 End Class
